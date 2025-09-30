@@ -112,6 +112,12 @@ price_targets:
   KUL-MAD: 1800
   KUL-BCN: 1800
 alert_mode: hard_only   # opciones: hard_only | smart (por defecto)
+# Opcional: avisa si el mejor precio está cerca del umbral (p. ej. a ≤8%)
+soft_margin_pct: 0.08     # 8%. Pon 0 si no lo quieres.
+
+debug:
+  send_run_summary: true   # resumen al final de cada ejecución
+  top_n: 3                 # hasta 3 mejores combinaciones por ruta
 notify:
   telegram_bot_token: "${TELEGRAM_TOKEN}"
   telegram_chat_id: "${TELEGRAM_CHAT}"
