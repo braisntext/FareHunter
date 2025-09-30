@@ -60,7 +60,11 @@ def main():
     ama = Amadeus()
     st = Store()
     nt = Notifier()
-    rules = Rules(cfg.get("price_targets"))
+    rules = Rules(
+    cfg.get("price_targets"),
+    cfg.get("alert_mode", "smart"),
+    cfg.get("default_price_target")  # opcional si quieres un umbral global
+)
     max_stops = int(cfg.get("max_stops", 1))
 
     for origin, dest, dep, ret, month_iso in iter_searches(cfg):
