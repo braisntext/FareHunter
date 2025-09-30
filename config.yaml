@@ -107,10 +107,10 @@ airlines_whitelist:
   - UU   # Air Austral
   - VN   # Vietnam Airlines
 price_targets:
-  BKK-MAD: 1500
-  BKK-BCN: 1500
-  KUL-MAD: 1400
-  KUL-BCN: 1400
+  BKK-MAD: 1900
+  BKK-BCN: 1900
+  KUL-MAD: 1800
+  KUL-BCN: 1800
 alert_mode: hard_only   # opciones: hard_only | smart (por defecto)
 notify:
   telegram_bot_token: "${TELEGRAM_TOKEN}"
