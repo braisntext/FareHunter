@@ -1,0 +1,16 @@
+origins: [BKK, KUL]
+destinations: [MAD, BCN]
+months: ["2025-11-01"]   # salidas en noviembre
+stays_nights: [14, 21, 28, 35, 42, 49, 56]   # 2 a 8 semanas
+dow_bias: [Tue, Wed, Sat]
+max_stops: 1
+airlines_whitelist: [QR, TK, EY, EK, LH, AF, IB]
+price_targets:
+  BKK-MAD: 1500
+  BKK-BCN: 1500
+  KUL-MAD: 1400
+  KUL-BCN: 1400
+notify:
+  telegram_bot_token: "${TELEGRAM_TOKEN}"
+  telegram_chat_id: "${TELEGRAM_CHAT}"
+  email_smtp: null
