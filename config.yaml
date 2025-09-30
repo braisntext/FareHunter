@@ -4,12 +4,114 @@ months: ["2025-11-01"]   # salidas en noviembre
 stays_nights: [14, 21, 28, 35, 42, 49, 56]   # 2 a 8 semanas
 dow_bias: [Tue, Wed, Sat]
 max_stops: 1
-airlines_whitelist: [QR, TK, EY, EK, LH, AF, IB]
+airlines_whitelist:
+  - AF   # Air France
+  - AM   # Aeroméxico
+  - AR   # Aerolíneas Argentinas
+  - AS   # Alaska Airlines
+  - AV   # Avianca
+  - AY   # Finnair
+  - AZ   # ITA Airways
+  - BA   # British Airways
+  - BR   # EVA Air
+  - CA   # Air China
+  - CI   # China Airlines
+  - CM   # Copa Airlines
+  - CX   # Cathay Pacific
+  - CZ   # China Southern
+  - DL   # Delta Air Lines
+  - EK   # Emirates
+  - ET   # Ethiopian Airlines
+  - EY   # Etihad Airways
+  - FI   # Icelandair
+  - FJ   # Fiji Airways
+  - GA   # Garuda Indonesia
+  - IB   # Iberia
+  - JL   # Japan Airlines
+  - KC   # Air Astana
+  - KE   # Korean Air
+  - KL   # KLM
+  - LA   # LATAM
+  - LH   # Lufthansa
+  - LO   # LOT Polish
+  - LX   # Swiss
+  - LY   # EL AL
+  - ME   # Middle East Airlines
+  - MH   # Malaysia Airlines
+  - MS   # EgyptAir
+  - MU   # China Eastern
+  - NH   # ANA All Nippon Airways
+  - NZ   # Air New Zealand
+  - OA   # Olympic Air
+  - OS   # Austrian
+  - OU   # Croatia Airlines
+  - PR   # Philippine Airlines
+  - QR   # Qatar Airways
+  - QF   # Qantas
+  - RJ   # Royal Jordanian
+  - RO   # TAROM Romania
+  - SA   # South African Airways
+  - SK   # SAS
+  - SN   # Brussels Airlines
+  - SQ   # Singapore Airlines
+  - SU   # Aeroflot
+  - SV   # Saudia
+  - TA   # TACA (Avianca El Salvador)
+  - TG   # Thai Airways
+  - TK   # Turkish Airlines
+  - TP   # TAP Portugal
+  - TU   # Tunisair
+  - UA   # United Airlines
+  - UX   # Air Europa
+  - UX   # Air Europa
+  - VN   # Vietnam Airlines
+  - VS   # Virgin Atlantic
+  - VY   # Vueling
+  - WS   # WestJet
+  - WY   # Oman Air
+  - XL   # LATAM Ecuador
+  - ZH   # Shenzhen Airlines
+  - AC   # Air Canada
+  - AD   # Azul Brazilian
+  - AH   # Air Algérie
+  - BI   # Royal Brunei
+  - BT   # Air Baltic
+  - BW   # Caribbean Airlines
+  - BZ   # Blue Bird
+  - DE   # Condor
+  - GF   # Gulf Air
+  - HN   # Hainan Airlines
+  - HU   # Hainan Airlines
+  - HY   # Uzbekistan Airways
+  - IR   # Iran Air
+  - JJ   # LATAM Brazil
+  - JL   # Japan Airlines
+  - JM   # Air Jamaica
+  - KQ   # Kenya Airways
+  - KU   # Kuwait Airways
+  - LR   # Avianca Costa Rica
+  - MK   # Air Mauritius
+  - MT   # Thomas Cook (histórico)
+  - NU   # Japan Transocean Air
+  - OA   # Olympic Air
+  - OK   # Czech Airlines
+  - PC   # Pegasus (low-cost, a veces ofrece business light)
+  - PS   # Ukraine International
+  - PW   # Precision Air
+  - PX   # Air Niugini
+  - PY   # Surinam Airways
+  - RJ   # Royal Jordanian
+  - TG   # Thai Airways
+  - TK   # Turkish Airlines
+  - TS   # Air Transat
+  - UU   # Air Austral
+  - VN   # Vietnam Airlines
 price_targets:
   BKK-MAD: 1500
   BKK-BCN: 1500
   KUL-MAD: 1400
   KUL-BCN: 1400
+alert_mode: hard_only   # opciones: hard_only | smart (por defecto)
 notify:
   telegram_bot_token: "${TELEGRAM_TOKEN}"
   telegram_chat_id: "${TELEGRAM_CHAT}"
