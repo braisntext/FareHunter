@@ -3,7 +3,7 @@ destinations: [MAD, BCN]
 months: ["2025-11-01"]   # salidas en noviembre
 stays_nights: [14, 21, 28, 35, 42, 49, 56]   # 2 a 8 semanas
 dow_bias: [Tue, Wed, Sat]
-max_stops: 1
+max_stops: 2
 airlines_whitelist:
   - AF   # Air France
   - AM   # Aeroméxico
